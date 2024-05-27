@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include '_snippets/_header.twig' %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>MANGAZINE - Shop</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<header class="header-content">
+    <div class="top-mangas-wrapper">
+        <div class="header-title">
+            <h4>Selfpage</h4>
+            <hr>
+        </div>
+
+        <h1>{{ entry.title }}</h1>
+
+        {% set heroImage = entry.heroImage.one() %}
+        <img src="{{ heroImage.url }}" alt="{{ entry.title }}">
+
+
+
+    </div>
+</header>
+{% include '_snippets/_footer.twig' %}
+</body>
+</html>

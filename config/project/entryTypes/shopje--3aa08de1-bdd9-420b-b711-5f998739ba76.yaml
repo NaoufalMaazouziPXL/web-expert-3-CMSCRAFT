@@ -1,0 +1,50 @@
+color: null
+fieldLayouts:
+  6fc0e13e-12c5-48ae-a8c0-d96715ec8dc4:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 3814e3ab-234c-4891-a9a0-1ebc2afc4d0c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 93340043-324e-4b72-a3ea-a7619354401d
+        userCondition: null
+handle: shopje
+hasTitleField: true
+icon: ''
+name: shopje
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,73 @@
+{% extends 'home.twig' %}
+
+{% block content  %}
+    <header class="header-content">
+        <div class="banner-description">
+            <h4>{{ entry.mangaSubtitle }}</h4>
+        </div>
+        <div class="top-mangas-wrapper">
+            <div class="header-title">
+                <h4>{{ entry.popularMangas }}</h4>
+                <hr>
+            </div>
+            <div class="mangas-container">
+                {% set popularImageOne = entry.popularImageOne.one() %}
+
+                {% if popularImageOne is not null %}
+                    <div class="specific-manga">
+                        <a href="/shop.twig">
+                            <img src="{{ popularImageOne.url }}" alt="popular-image">
+                        </a>
+                    </div>
+                {% else %}
+                    <p>Image not found.</p>
+                {% endif %}
+
+                {% set popularImageTwo = entry.popularImageTwo.one() %}
+
+                {% if popularImageTwo is not null %}
+                    <div class="specific-manga">
+                        <a href="/shop.twig">
+                            <img src="{{ popularImageTwo.url }}" alt="popular-image">
+                        </a>
+                    </div>
+                {% else %}
+                    <p>Image not found.</p>
+                {% endif %}
+
+
+                {% set popularImageThree = entry.popularImageThree.one() %}
+
+                {% if popularImageThree is not null %}
+                    <div class="specific-manga">
+                        <a href="/shop.twig">
+                            <img src="{{ popularImageThree.url }}" alt="popular-image">
+                        </a>
+                    </div>
+                {% else %}
+                    <p>Image not found.</p>
+                {% endif %}
+            </div>
+        </div>
+    </header>
+    <section class="suggestion-content">
+        <div class="suggestions-wrapper">
+            <div class="suggestion-box-wrapper">
+                <h4>Start a new series!</h4>
+                <hr>
+                <div class="suggestion-box">
+                    <img src="../images/Group 1.svg" alt="suggestion-1">
+                </div>
+            </div>
+            <div class="suggestion-box-wrapper">
+                <h4>Order a physical copy!</h4>
+                <hr>
+                <div class="suggestion-box">
+                    <img src="../images/Group 2.svg" alt="suggestion-2">
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+

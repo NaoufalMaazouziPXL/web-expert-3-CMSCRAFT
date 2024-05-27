@@ -1,0 +1,125 @@
+color: red
+fieldLayouts:
+  9c36ad3b-b2c2-476b-bd7b-86d190e85dc0:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 5cf38289-75eb-4ce6-ab0f-300f5a691e03
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 741a4940-c069-4e81-9e3b-5fc9c59ad8a9 # manga-subtitle
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 073027d3-4f2a-4ece-9912-57a1e7dbf704
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 44d8ec46-3f59-491f-aaab-759442108a29 # popular-mangas
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d0fbdc0c-89ae-41ce-babb-899c8520d23d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ae2b0190-a439-4ee3-9335-590476a4bdd6 # popularImageOne
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2823ae1f-5cee-4187-a282-9a21c6980a40
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3d56f0bf-0c91-45d1-b676-b46cf72a7a56 # popularImageTwo
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ff425d9b-5edc-4b86-b2dd-e602d868524f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2735d862-141d-4eec-8273-414f73f74176 # popularImageThree
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 67a9c0f9-b97d-4430-8b8e-27077b741c0b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d54bd5e3-2be6-4638-9c56-d0e87888670a
+        userCondition: null
+handle: homepage
+hasTitleField: true
+icon: house
+name: homepage
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

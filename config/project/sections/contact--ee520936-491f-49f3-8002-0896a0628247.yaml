@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 1a1339d4-7fd9-4cc0-a269-786eb52e19b3 # contactPage
+handle: contact
+maxAuthors: 1
+name: Contact
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  c1520826-377f-476b-bf92-e4c997cf7ab2: # werkpakket-3
+    enabledByDefault: true
+    hasUrls: true
+    template: contact.twig
+    uriFormat: 'contact/{slug}'
+type: channel

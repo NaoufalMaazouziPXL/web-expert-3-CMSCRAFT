@@ -1,0 +1,50 @@
+color: null
+fieldLayouts:
+  b27735eb-2c8d-4939-8156-7af73daff4c8:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: dd407dc6-470e-4df3-b032-36938c4b573d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: be772672-82a3-4369-951b-3358a1014d30
+        userCondition: null
+handle: contactpage
+hasTitleField: true
+icon: ''
+name: contactPage
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

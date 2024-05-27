@@ -1,0 +1,12 @@
+<footer class="footer-content">
+    <hr>
+    <div class="footer-wrapper">
+        {% set globalFooter = craft.app.globals.getSetByHandle('footer') %}
+        <div>
+            <h4>{{ globalFooter.email }}</h4>
+        </div>
+        <div>
+            <h4>{{ globalFooter.adress }}</h4>
+        </div>
+    </div>
+</footer>

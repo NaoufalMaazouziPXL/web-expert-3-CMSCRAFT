@@ -1,0 +1,50 @@
+{%  include '_snippets/_header.twig' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>MANGAZINE - Productpage</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<header class="header-content">
+    <div class="top-mangas-wrapper">
+        <div class="header-title">
+            <h4>
+                Detailpage
+            </h4>
+            <hr>
+        </div>
+    </div>
+    <div class="item__container">
+        <div class="item__image">
+            {% set mangaImage = entry.mangaImage.one() %}
+
+            <img src="{{ mangaImage.url }}" alt="{{ entry.mangaTitle }}">
+        </div>
+        <div class="manga__detail__container">
+            <div class="manga__detail__description">
+                <h2 class="manga__title">{{ entry.title }}</h2>
+                <h3>{{ entry.mangaTitle }}</h3>
+                <h3 class="price__tag">{{ entry.priceTag }}</h3>
+                <p>
+                    {{ entry.mangaDescription }}
+                </p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <p><a href="#">12 Reviews</a></p>
+                <input type="number">
+                <button>Add to cart</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+</body>
+
+{%  include '_snippets/_footer.twig' %}

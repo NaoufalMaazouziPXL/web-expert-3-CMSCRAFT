@@ -1,0 +1,185 @@
+color: null
+fieldLayouts:
+  e470da12-6eff-49d3-8012-95d8a3238548:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 96e678ed-a46e-4d59-a67d-2498821b5e0f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ae2b0190-a439-4ee3-9335-590476a4bdd6 # popularImageOne
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 97807b18-b849-47c4-890b-14218f79c78a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 741a4940-c069-4e81-9e3b-5fc9c59ad8a9 # manga-subtitle
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 89376b24-0ef4-43bd-a0df-d7fb48898bb8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d2132ed0-1dca-4c1e-a094-704f75dd227d # price
+            handle: priceTag3
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9f25c19c-4e00-44fc-aca7-4d737a525716
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3d56f0bf-0c91-45d1-b676-b46cf72a7a56 # popularImageTwo
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 662aa60b-0dcc-4afa-a09e-d75a3d0c8346
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 741a4940-c069-4e81-9e3b-5fc9c59ad8a9 # manga-subtitle
+            handle: mangaSubtitle2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b9c3ab50-a72d-4e9d-8c0c-5be0c622e479
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d2132ed0-1dca-4c1e-a094-704f75dd227d # price
+            handle: priceTag2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 46f9e1cf-0735-41ad-9aa2-b78e349779f3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2735d862-141d-4eec-8273-414f73f74176 # popularImageThree
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c24419e1-250d-45f9-a151-f87fc2f03488
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 741a4940-c069-4e81-9e3b-5fc9c59ad8a9 # manga-subtitle
+            handle: mangaSubtitle3
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 74c2d1f9-a807-49c6-a4a8-140f4e909299
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d2132ed0-1dca-4c1e-a094-704f75dd227d # price
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 92d4c89a-d857-4c11-862a-81f085b8e5f8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 49fd057d-b45b-4e04-9002-8056799298cc
+        userCondition: null
+handle: productBlok
+hasTitleField: true
+icon: ''
+name: product-blok
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

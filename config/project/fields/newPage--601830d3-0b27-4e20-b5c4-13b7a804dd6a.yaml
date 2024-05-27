@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: newPage
+instructions: null
+name: new-page
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 63ce5f3b-8e3f-4b76-bb60-4545ea6e0a29 # hero-image-text-block
+    - ed21b4ee-b2cb-4caf-bf50-54a6fff3a892 # form-block
+    - 1858efdf-91be-4cc2-a0d5-4c90ac1ba999 # producten-block
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

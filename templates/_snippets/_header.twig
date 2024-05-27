@@ -1,0 +1,18 @@
+<nav class="navbar">
+
+    <div class="logo">
+        <a href="/">
+            <h3>MANGAZINE</h3>
+        </a>
+    </div>
+
+    <div class="nav-bar-wrapper">
+        <ul>
+            {% for link in header.navigation %}
+                {% set destination = link.linkDestination.one() %}
+                <li><a href="{{ destination.url}}">{{ link.linkText }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+
+</nav>
