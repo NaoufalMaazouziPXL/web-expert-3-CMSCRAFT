@@ -720,4 +720,9 @@ body {
   color: #f6e200;
 }
 
+.producten-block {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*# sourceMappingURL=main.css.map */

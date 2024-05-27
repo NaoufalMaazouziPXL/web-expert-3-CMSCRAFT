@@ -34,6 +34,141 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: c2012e84-6ba4-42b8-9feb-13b41ba736ef # manga-image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a5316165-d137-46ed-8f1e-2d584a19cc8b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 28ab9931-1bb9-4848-a919-761dce603991 # manga-title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8e470e07-6f08-47d7-ba96-6a4bb4f7d0b5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d2132ed0-1dca-4c1e-a094-704f75dd227d # price
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a6dd41ba-24f0-45c9-b1fe-9c91c76f84d8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c2012e84-6ba4-42b8-9feb-13b41ba736ef # manga-image
+            handle: mangaImage2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 39f00b31-155a-44ad-b7a2-1a0bba8d3b22
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 28ab9931-1bb9-4848-a919-761dce603991 # manga-title
+            handle: mangaTitle2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a3edc663-2560-46d1-809f-fe0a0dbaeeed
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d2132ed0-1dca-4c1e-a094-704f75dd227d # price
+            handle: priceTag2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6955ff26-64e0-4d56-8077-677481f6858d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c2012e84-6ba4-42b8-9feb-13b41ba736ef # manga-image
+            handle: mangaImage3
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3c39fa12-b1e7-427d-948b-3f088f9e7c1a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 28ab9931-1bb9-4848-a919-761dce603991 # manga-title
+            handle: mangaTitle3
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a52243c2-6725-402b-b859-467c4db8a4a4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d2132ed0-1dca-4c1e-a094-704f75dd227d # price
+            handle: priceTag3
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e16675d6-815e-43f4-8e8e-bc1a2caffdca
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: a123901e-c450-49f9-a639-4d533eb99ae4
         userCondition: null

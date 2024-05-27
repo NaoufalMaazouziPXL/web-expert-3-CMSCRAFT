@@ -34,6 +34,21 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 275b7f07-c258-4185-9ba5-9113b6410f38 # contact-form
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c98c6305-e451-48b8-87da-1772aae622ee
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: be772672-82a3-4369-951b-3358a1014d30
         userCondition: null

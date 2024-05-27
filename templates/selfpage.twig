@@ -4,24 +4,80 @@
     {% include '_snippets/_header.twig' %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>MANGAZINE - Shop</title>
+    <title>{{ entry.title }}</title>
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
 <header class="header-content">
     <div class="top-mangas-wrapper">
         <div class="header-title">
-            <h4>Selfpage</h4>
+            <h4>{{ entry.title }}</h4>
             <hr>
+
+            {# Fetch the blocks from the newPage Matrix field #}
+            {% for block in entry.newPage.all() %}
+
+                {# Handle heroImageTextBlock #}
+                {% if block.type == 'heroImageTextBlock' %}
+                    <div class="hero-image-text-block">
+                        <h2>{{ block.title }}</h2>
+                        {% set heroImage = block.heroImage.one() %}
+                        {% if heroImage %}
+                            <img src="{{ heroImage.url }}" alt="{{ heroImage.title }}">
+                        {% else %}
+                            <p>No hero image found</p>
+                        {% endif %}
+                    </div>
+
+                    {# Handle formBlock #}
+                {% elseif block.type == 'formBlock' %}
+                    <div class="form-block">
+                        {{ craft.formie.renderForm('contact') }}
+                    </div>
+
+                    {# Handle productenBlock #}
+                {% elseif block.type == 'productenBlock' %}
+                    <div class="producten-block">
+
+                        <div class="product">
+                            {% set mangaImage = block.mangaImage.one() %}
+                            {% if mangaImage %}
+                                <img src="{{ mangaImage.url }}" alt="{{ mangaImage.title }}">
+                            {% else %}
+                                <p>No manga image found</p>
+                            {% endif %}
+                            <h2>{{ block.mangaTitle }}</h2>
+                            <p>Price: {{ block.priceTag }}</p>
+                        </div>
+
+                        <div class="product">
+                            {% set mangaImage2 = block.mangaImage2.one() %}
+                            {% if mangaImage2 %}
+                                <img src="{{ mangaImage2.url }}" alt="{{ mangaImage2.title }}">
+                            {% else %}
+                                <p>No manga image found</p>
+                            {% endif %}
+                            <h2>{{ block.mangaTitle2 }}</h2>
+                            <p>Price: {{ block.priceTag2 }}</p>
+                        </div>
+
+                        <div class="product">
+                            {% set mangaImage3 = block.mangaImage3.one() %}
+                            {% if mangaImage3 %}
+                                <img src="{{ mangaImage3.url }}" alt="{{ mangaImage3.title }}">
+                            {% else %}
+                                <p>No manga image found</p>
+                            {% endif %}
+                            <h2>{{ block.mangaTitle3 }}</h2>
+                            <p>Price: {{ block.priceTag3 }}</p>
+                        </div>
+
+                    </div>
+
+                {% endif %}
+
+            {% endfor %}
         </div>
-
-        <h1>{{ entry.title }}</h1>
-
-        {% set heroImage = entry.heroImage.one() %}
-        <img src="{{ heroImage.url }}" alt="{{ entry.title }}">
-
-
-
     </div>
 </header>
 {% include '_snippets/_footer.twig' %}

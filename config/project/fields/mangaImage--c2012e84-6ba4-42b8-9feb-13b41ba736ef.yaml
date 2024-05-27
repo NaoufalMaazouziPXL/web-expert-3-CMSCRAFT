@@ -13,7 +13,7 @@ settings:
   defaultUploadLocationSubpath: null
   localizeRelations: false
   maintainHierarchy: false
-  maxRelations: 1
+  maxRelations: 4
   minRelations: 1
   previewMode: full
   restrictFiles: false
