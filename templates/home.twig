@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
+{% hook 'after-body-start' %}
 {% include '_snippets/_header.twig' %}
 
 {% block content %}

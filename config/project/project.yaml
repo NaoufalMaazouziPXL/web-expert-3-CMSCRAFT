@@ -1,8 +1,16 @@
-dateModified: 1716834014
+dateModified: 1716848263
 email:
-  fromEmail: nouafelcf@hotmail.com
-  fromName: werkpakket-3
-  transportType: craft\mail\transportadapters\Sendmail
+  fromEmail: noreply@werkpakket3-webexpert.ddev.site
+  fromName: mangazine
+  replyToEmail: null
+  template: ''
+  transportSettings:
+    host: werkpakket3-webexpert.ddev.site/
+    password: ''
+    port: ''
+    useAuthentication: '0'
+    username: ''
+  transportType: craft\mail\transportadapters\Smtp
 fs:
   files:
     hasUrls: true
@@ -13,6 +21,7 @@ fs:
     url: /files
 meta:
   __names__:
+    0edb8c4f-1da5-49f6-81f2-c7e34af62659: age # age
     1a1339d4-7fd9-4cc0-a269-786eb52e19b3: contactPage # contactPage
     1ca247f3-9fe9-4af6-a580-8875b5866828: New # New
     1e29eec7-3fe7-4581-a74f-c7398939a6b2: 'Link Text' # Link Text
@@ -25,6 +34,7 @@ meta:
     4bf4e2d5-5048-4ccd-81cc-d8941967e4c4: product-name # product-name
     5a622a5c-9eb0-4864-bd20-fde9ba0d113f: Startpagina # Startpagina
     6a55cef8-26da-4256-8f45-045dadd25eec: mangatitle # mangatitle
+    16bb7c47-6f25-44be-abd6-756dca384629: default-two # default-two
     28ab9931-1bb9-4848-a919-761dce603991: manga-title # manga-title
     35faf895-b1c5-4974-9e52-1bf0d7c32f8c: navigation # navigation
     44d8ec46-3f59-491f-aaab-759442108a29: popular-mangas # popular-mangas
@@ -33,10 +43,12 @@ meta:
     63ce5f3b-8e3f-4b76-bb60-4545ea6e0a29: hero-image-text-block # hero-image-text-block
     88d8d6d8-3531-44e5-93c0-8bf7aa58e1c5: 'Nav Link' # Nav Link
     275b7f07-c258-4185-9ba5-9113b6410f38: contact-form # contact-form
+    429b590b-d70f-4600-8126-d036563347cd: Genres # Genres
     489ef2d6-aaba-40ff-94fd-3b8f0a7d24fb: Footer # Footer
     587fac99-b75a-485f-8a8c-104ad1950910: product # product
     735f9fe4-bce9-4c25-988f-78dbc03d69be: werkpakket-3 # werkpakket-3
     741a4940-c069-4e81-9e3b-5fc9c59ad8a9: manga-subtitle # manga-subtitle
+    783a3d80-f8e4-4c0d-92df-112c01c4d316: age-number # age-number
     1342cf96-b153-4550-8e44-fb7a3ba8f8b8: product-image # product-image
     1858efdf-91be-4cc2-a0d5-4c90ac1ba999: producten-block # producten-block
     2044b48b-aa4d-438c-a635-97c226760aa7: productOne # productOne
@@ -45,15 +57,19 @@ meta:
     5655c52c-cee2-429f-b54e-c36f7d1fa771: email # email
     601830d3-0b27-4e20-b5c4-13b7a804dd6a: new-page # new-page
     5959532f-1955-4e5c-879e-5edad4768303: Selfpage # Selfpage
+    a6e5feee-9d1f-4d45-9e41-ae8ac422dedb: genre # genre
     acdf6b97-f2b3-4e5f-aab0-ebdbdafccf21: product-blok # product-blok
     ae2b0190-a439-4ee3-9335-590476a4bdd6: popularImageOne # popularImageOne
     b4f088cb-8d36-44ae-aa7f-c4c13e948a6e: homepage # homepage
     b67e5ca3-ca52-4331-b275-0069d9709090: Header # Header
     c7cf490b-4912-4e58-967e-290203b2a838: selfpage # selfpage
+    c57d5f62-cdd3-4db8-bc3a-afb0616bd253: genre # genre
     c2012e84-6ba4-42b8-9feb-13b41ba736ef: manga-image # manga-image
     c1520826-377f-476b-bf92-e4c997cf7ab2: werkpakket-3 # werkpakket-3
+    d091d08a-ab0b-49f0-adc7-1c247ec4841a: genre-title # genre-title
     d2a4cb82-f977-4fb2-932c-7cfa9bda53d9: shop-link # shop-link
     d9d68fac-62b9-429b-a1d0-c4575f1bdeb1: 'Public Schema' # Public Schema
+    d39df6d2-95c9-4c96-bff7-207117ffff14: manga-genre # manga-genre
     d61e2eaf-42ef-4308-93ed-a8aa066bce00: product-description # product-description
     d2132ed0-1dca-4c1e-a094-704f75dd227d: price # price
     db1a2742-203b-4746-ac31-df491ada9578: Bestanden # Bestanden
@@ -64,7 +80,9 @@ meta:
     f3fea6f9-05e1-4432-8415-daed09945d73: heroImage # heroImage
     f7db66ca-a7dc-44d2-bf83-7ef9537d4fa9: productpage # productpage
     f8da9673-f28d-411e-bebb-4ba840034ea2: hero-image-text # hero-image-text
+    f49ced23-d13c-4ca8-ab56-ced762b3212b: default # default
     f95ef78b-bad9-4c09-8fed-bcc03f9a6d42: adress # adress
+    f6471466-c555-49f3-8dd2-453b247ee660: Ages # Ages
 plugins:
   cookie-consent:
     edition: standard

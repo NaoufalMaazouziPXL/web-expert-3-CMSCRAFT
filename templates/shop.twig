@@ -16,20 +16,51 @@
         </div>
     </div>
     <div class="filter-container">
-        <label for="ageFilter">Genre:</label>
-        <select>
-            <option>Je optie</option>
-        </select>
-        <label for="ageFilter">Age:</label>
-        <select>
-            <option>Je optie</option>
-        </select>
+        {% set genres = craft.entries.section('genres').all() %}
+        {% set ages = craft.entries.section('ages').all() %}
+        <form method="get">
+            <label for="genreFilter">Genre:</label>
+            <select id="genreFilter" name="genreFilter" onchange="this.form.submit()">
+                <option value="">All Genres</option>
+                {% for genre in genres %}
+                    <option value="{{ genre.id }}"
+                            {% if selectedGenreId is defined and selectedGenreId == genre.id %}
+                    selected
+                            {% endif %}>{{ genre.title }}
+                    </option>
+                {% endfor %}
+            </select>
+            <label for="ageFilter">Age:</label>
+            <select id="ageFilter" name="ageFilter" onchange="this.form.submit()">
+                <option value="">All Ages</option>
+                {% for age in ages %}
+                    <option value="{{ age.id }}"
+                            {% if selectedAgeId is defined and selectedAgeId == age.id %}
+                    selected
+                            {% endif %}>{{ age.title }}
+                    </option>
+                {% endfor %}
+            </select>
+        </form>
     </div>
 
     <div class="mangas-shop-container">
         <div class="mangas-first-row-container">
             <div class="mangas-container">
-                {% set products = craft.entries.section('Shop').limit(6).all() %}
+                {% set productsQuery = craft.entries.section('shop') %}
+                {% if selectedGenreId is defined %}
+                    {% set productsQuery = productsQuery.relatedTo({
+                        targetElement: selectedGenreId,
+                        field: 'genreFieldHandle'
+                    }) %}
+                {% endif %}
+                {% if selectedAgeId is defined %}
+                    {% set productsQuery = productsQuery.relatedTo({
+                        targetElement: selectedAgeId,
+                        field: 'ageFieldHandle'
+                    }) %}
+                {% endif %}
+                {% set products = productsQuery.all() %}
                 {% for product in products %}
                     <div class="manga-content-holder">
                         <div class="manga-information-container">
