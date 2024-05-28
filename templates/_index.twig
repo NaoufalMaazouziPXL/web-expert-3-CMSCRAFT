@@ -1,6 +1,6 @@
 {% extends 'home.twig' %}
 
-{% block content  %}
+{% block content %}
     <header class="header-content">
         <div class="banner-description">
             <h4>{{ entry.mangaSubtitle }}</h4>
@@ -35,7 +35,6 @@
                     <p>Image not found.</p>
                 {% endif %}
 
-
                 {% set popularImageThree = entry.popularImageThree.one() %}
 
                 {% if popularImageThree is not null %}
@@ -68,6 +67,28 @@
             </div>
         </div>
     </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/Flip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
+
+    <script>
+        gsap.registerPlugin(Flip, TextPlugin);
+
+        gsap.to(".banner-description h4", {
+            duration: 2.5,
+            text: "Welcome to the Manga Shop!",
+            repeat: 1,
+            yoyo: true,
+            ease: "power1.inOut"
+        });
+
+        gsap.from(".specific-manga img", {
+            duration: 1,
+            scale: 0.5,
+            opacity: 0,
+            stagger: 0.2,
+            ease: "back.out(1.7)"
+        });
+    </script>
 {% endblock %}
-
-

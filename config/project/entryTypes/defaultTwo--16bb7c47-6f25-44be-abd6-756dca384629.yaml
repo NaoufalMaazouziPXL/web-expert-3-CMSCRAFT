@@ -1,0 +1,65 @@
+color: null
+fieldLayouts:
+  ce7a9b89-2c3c-4505-b397-8a3e8cd04f60:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: ffb7246b-604b-4a70-adf8-7f5816e99cc6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 783a3d80-f8e4-4c0d-92df-112c01c4d316 # age-number
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 92caa7ef-2070-4f28-a710-d67a0efe69a2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c4ba753f-c4e2-4bd7-8c4c-e612153878cb
+        userCondition: null
+handle: defaultTwo
+hasTitleField: true
+icon: ''
+name: default-two
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

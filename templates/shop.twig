@@ -18,7 +18,11 @@
     <div class="filter-container">
         {% set genres = craft.entries.section('genres').all() %}
         {% set ages = craft.entries.section('ages').all() %}
-        <form method="get">
+
+        {% set selectedGenreId = craft.app.request.getParam('genreFilter') %}
+        {% set selectedAgeId = craft.app.request.getParam('ageFilter') %}
+
+        <form>
             <label for="genreFilter">Genre:</label>
             <select id="genreFilter" name="genreFilter" onchange="this.form.submit()">
                 <option value="">All Genres</option>
@@ -48,42 +52,47 @@
         <div class="mangas-first-row-container">
             <div class="mangas-container">
                 {% set productsQuery = craft.entries.section('shop') %}
-                {% if selectedGenreId is defined %}
+                {% if selectedGenreId %}
                     {% set productsQuery = productsQuery.relatedTo({
                         targetElement: selectedGenreId,
-                        field: 'genreFieldHandle'
+                        field: 'genreFilter'
                     }) %}
                 {% endif %}
-                {% if selectedAgeId is defined %}
+                {% if selectedAgeId %}
                     {% set productsQuery = productsQuery.relatedTo({
                         targetElement: selectedAgeId,
-                        field: 'ageFieldHandle'
+                        field: 'ageFilter'
                     }) %}
                 {% endif %}
                 {% set products = productsQuery.all() %}
-                {% for product in products %}
-                    <div class="manga-content-holder">
-                        <div class="manga-information-container">
-                            <div class="first-title-wrapper">
-                                {% set image = product.mangaImage.one() %}
-                                {% if image %}
-                                    <a href="https://werkpakket3-webexpert.ddev.site/product/{{ product.title }}">
-                                        <img src="{{ image.url }}" alt="{{ product.mangaTitle }}">
-                                    </a>
-                                {% else %}
-                                    <img src="../images/default.png" alt="Default Image">
-                                {% endif %}
-                                <div class="manga-title-price">
-                                    <h3>{{ product.mangaTitle }}</h3>
-                                    <h3>{{ product.priceTag }}</h3>
+
+                {% if products|length %}
+                    {% for product in products %}
+                        <div class="manga-content-holder">
+                            <div class="manga-information-container">
+                                <div class="first-title-wrapper">
+                                    {% set image = product.mangaImage.one() %}
+                                    {% if image %}
+                                        <a href="https://werkpakket3-webexpert.ddev.site/product/{{ product.title }}">
+                                            <img src="{{ image.url }}" alt="{{ product.mangaTitle }}">
+                                        </a>
+                                    {% else %}
+                                        <img src="../images/default.png" alt="Default Image">
+                                    {% endif %}
+                                    <div class="manga-title-price">
+                                        <h3>{{ product.mangaTitle }}</h3>
+                                        <h3>{{ product.priceTag }}</h3>
+                                    </div>
+                                </div>
+                                <div class="manga-description">
+                                    <h6>{{ product.mangaDescription }}</h6>
                                 </div>
                             </div>
-                            <div class="manga-description">
-                                <h6>{{ product.mangaDescription }}</h6>
-                            </div>
                         </div>
-                    </div>
-                {% endfor %}
+                    {% endfor %}
+                {% else %}
+                    <p>No products found for the selected filters.</p>
+                {% endif %}
             </div>
         </div>
 
