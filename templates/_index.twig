@@ -52,17 +52,20 @@
     <section class="suggestion-content">
         <div class="suggestions-wrapper">
             <div class="suggestion-box-wrapper">
-                <h4>Start a new series!</h4>
+                <h4>{{ entry.mangaHighlightOneText }}</h4>
                 <hr>
+                {% set highlightImageOne = entry.mangaHighlightOneImage.one() %}
+                {% set highlightImageTwo = entry.mangaHighlightTwoImage.one() %}
+
                 <div class="suggestion-box">
-                    <img src="../images/Group 1.svg" alt="suggestion-1">
+                    <img src="{{ highlightImageOne.url }}" alt="suggestion-1">
                 </div>
             </div>
             <div class="suggestion-box-wrapper">
-                <h4>Order a physical copy!</h4>
+                <h4>{{ entry.mangaHighlightTwoText }}</h4>
                 <hr>
                 <div class="suggestion-box">
-                    <img src="../images/Group 2.svg" alt="suggestion-2">
+                    <img src="{{ highlightImageTwo.url }}" alt="suggestion-2">
                 </div>
             </div>
         </div>

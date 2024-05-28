@@ -34,6 +34,21 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 35221e77-5b32-47d8-8f24-13615f5efd4d # phone-number
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5351ab12-5c1d-4345-82da-004775279a3d
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: bfd2359d-84dc-4e18-a9b6-7932c706b24f
         userCondition: null

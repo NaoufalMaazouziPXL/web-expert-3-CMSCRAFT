@@ -51,7 +51,11 @@
     <div class="mangas-shop-container">
         <div class="mangas-first-row-container">
             <div class="mangas-container">
-                {% set productsQuery = craft.entries.section('shop') %}
+                {% set limit = 6 %}
+                {% set page = craft.app.request.getParam('page') ?? 1 %}
+                {% set offset = (page - 1) * limit %}
+
+                {% set productsQuery = craft.entries.section('shop').limit(limit).offset(offset) %}
                 {% if selectedGenreId %}
                     {% set productsQuery = productsQuery.relatedTo({
                         targetElement: selectedGenreId,
@@ -65,6 +69,8 @@
                     }) %}
                 {% endif %}
                 {% set products = productsQuery.all() %}
+                {% set totalProducts = productsQuery.count() %}
+                {% set totalPages = (totalProducts / limit)|round(0, 'ceil') %}
 
                 {% if products|length %}
                     {% for product in products %}
@@ -97,15 +103,37 @@
         </div>
 
         <div class="pagination">
-            <div>
-                <p>Previous</p>
-            </div>
-            <div>
-                <p class="pagination__item">1</p>
-            </div>
-            <div>
-                <p>Next</p>
-            </div>
+            {% if page > 1 %}
+                <div>
+                    <a href="?page={{ page - 1 }}
+                       {% if selectedGenreId %}&genreFilter={{ selectedGenreId }}{% endif %}
+                       {% if selectedAgeId %}&ageFilter={{ selectedAgeId }}{% endif %}">
+                        Previous
+                    </a>
+                </div>
+            {% endif %}
+
+            {% for p in 1..totalPages %}
+                <div>
+                    <a href="?page={{ p }}
+                       {% if selectedGenreId %}
+                       &genreFilter={{ selectedGenreId }}{% endif %}
+                       {% if selectedAgeId %}&ageFilter={{ selectedAgeId }}{% endif %}"
+                       class="pagination__item {% if p == page %}active{% endif %}">
+                        {{ p }}
+                    </a>
+                </div>
+            {% endfor %}
+
+            {% if page < totalPages %}
+                <div>
+                    <a href="?page={{ page + 1 }}
+                       {% if selectedGenreId %}&genreFilter={{ selectedGenreId }}{% endif %}
+                       {% if selectedAgeId %}&ageFilter={{ selectedAgeId }}{% endif %}">
+                        Next
+                    </a>
+                </div>
+            {% endif %}
         </div>
     </div>
 </header>

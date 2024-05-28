@@ -1,4 +1,4 @@
-dateModified: 1716885337
+dateModified: 1716909057
 email:
   fromEmail: noreply@werkpakket3-webexpert.ddev.site
   fromName: mangazine
@@ -28,12 +28,14 @@ meta:
     2e6fd602-7cd6-439a-9a42-07de3948cc58: Shop # Shop
     2f716ea7-ef96-4bf3-89e1-d091c5e08cd2: form # form
     3aa08de1-bdd9-420b-b711-5f998739ba76: shopje # shopje
+    3c57b43a-b3ac-4e5d-9847-904a97fba212: manga-highlight-one-image # manga-highlight-one-image
     3d29fff0-8e97-41a8-8519-09059373e628: mangaProduct # mangaProduct
     3d56f0bf-0c91-45d1-b676-b46cf72a7a56: popularImageTwo # popularImageTwo
     3e25523d-8084-4104-b4ae-212a522d7416: header # header
     4bf4e2d5-5048-4ccd-81cc-d8941967e4c4: product-name # product-name
     5a622a5c-9eb0-4864-bd20-fde9ba0d113f: Startpagina # Startpagina
     6a55cef8-26da-4256-8f45-045dadd25eec: mangatitle # mangatitle
+    6b29cf74-f90b-462f-af6e-77063bd2cc5b: manga-highlight-two-text # manga-highlight-two-text
     16bb7c47-6f25-44be-abd6-756dca384629: default-two # default-two
     28ab9931-1bb9-4848-a919-761dce603991: manga-title # manga-title
     35faf895-b1c5-4974-9e52-1bf0d7c32f8c: navigation # navigation
@@ -45,6 +47,7 @@ meta:
     275b7f07-c258-4185-9ba5-9113b6410f38: contact-form # contact-form
     429b590b-d70f-4600-8126-d036563347cd: Genres # Genres
     489ef2d6-aaba-40ff-94fd-3b8f0a7d24fb: Footer # Footer
+    565b32b7-4774-4479-baf3-a8734b16a95e: manga-highlight-two-image # manga-highlight-two-image
     587fac99-b75a-485f-8a8c-104ad1950910: product # product
     735f9fe4-bce9-4c25-988f-78dbc03d69be: werkpakket-3 # werkpakket-3
     741a4940-c069-4e81-9e3b-5fc9c59ad8a9: manga-subtitle # manga-subtitle
@@ -55,9 +58,11 @@ meta:
     2735d862-141d-4eec-8273-414f73f74176: popularImageThree # popularImageThree
     5645c1b0-031f-4e21-a20c-fe082d0ef299: header # header
     5655c52c-cee2-429f-b54e-c36f7d1fa771: email # email
+    35221e77-5b32-47d8-8f24-13615f5efd4d: phone-number # phone-number
     601830d3-0b27-4e20-b5c4-13b7a804dd6a: new-page # new-page
     5959532f-1955-4e5c-879e-5edad4768303: Selfpage # Selfpage
     a6e5feee-9d1f-4d45-9e41-ae8ac422dedb: genre # genre
+    a607c76c-8146-4075-b623-6525e20d60ad: align-switch # align-switch
     acdf6b97-f2b3-4e5f-aab0-ebdbdafccf21: product-blok # product-blok
     ae2b0190-a439-4ee3-9335-590476a4bdd6: popularImageOne # popularImageOne
     b4f088cb-8d36-44ae-aa7f-c4c13e948a6e: homepage # homepage
@@ -73,6 +78,7 @@ meta:
     d61e2eaf-42ef-4308-93ed-a8aa066bce00: product-description # product-description
     d2132ed0-1dca-4c1e-a094-704f75dd227d: price # price
     db1a2742-203b-4746-ac31-df491ada9578: Bestanden # Bestanden
+    e976efbd-5b0f-46f7-970b-2125fd23434e: manga-highlight-one-text # manga-highlight-one-text
     eb426005-34b6-4941-923d-9dab7a05321b: 'Contact Form' # Contact Form
     ed21b4ee-b2cb-4caf-bf50-54a6fff3a892: form-block # form-block
     ee520936-491f-49f3-8002-0896a0628247: Contact # Contact

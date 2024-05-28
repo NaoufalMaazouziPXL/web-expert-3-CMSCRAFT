@@ -14,19 +14,26 @@
             <h4>{{ entry.title }}</h4>
             <hr>
 
-            {# Fetch the blocks from the newPage Matrix field #}
             {% for block in entry.newPage.all() %}
 
-                {# Handle heroImageTextBlock #}
                 {% if block.type == 'heroImageTextBlock' %}
                     <div class="hero-image-text-block">
                         <h2>{{ block.title }}</h2>
                         {% set heroImage = block.heroImage.one() %}
-                        {% if heroImage %}
-                            <img src="{{ heroImage.url }}" alt="{{ heroImage.title }}">
+                        {% if block.alignSwitch == true %}
+                            {% if heroImage %}
+                                <img class="align-left" src="{{ heroImage.url }}" alt="{{ heroImage.title }}">
+                            {% else %}
+                                <p>No hero image found</p>
+                            {% endif %}
                         {% else %}
-                            <p>No hero image found</p>
+                            {% if heroImage %}
+                                <img class="align-right" src="{{ heroImage.url }}" alt="{{ heroImage.title }}">
+                            {% else %}
+                                <p>No hero image found</p>
+                            {% endif %}
                         {% endif %}
+
                     </div>
 
                     {# Handle formBlock #}
@@ -71,11 +78,8 @@
                             <h2>{{ block.mangaTitle3 }}</h2>
                             <p>Price: {{ block.priceTag3 }}</p>
                         </div>
-
                     </div>
-
                 {% endif %}
-
             {% endfor %}
         </div>
     </div>

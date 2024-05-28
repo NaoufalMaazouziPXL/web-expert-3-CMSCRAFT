@@ -109,6 +109,66 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: e976efbd-5b0f-46f7-970b-2125fd23434e # manga-highlight-one-text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d219e283-a9d9-4bc8-a792-e7550e73a508
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6b29cf74-f90b-462f-af6e-77063bd2cc5b # manga-highlight-two-text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c5f16c49-d893-4333-9afe-ddd6a3557783
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3c57b43a-b3ac-4e5d-9847-904a97fba212 # manga-highlight-one-image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1b745a7d-842c-4ab0-be6a-b7a65decaea3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 565b32b7-4774-4479-baf3-a8734b16a95e # manga-highlight-two-image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0691828e-1bcd-45e1-a500-101e6ab12aef
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: d54bd5e3-2be6-4638-9c56-d0e87888670a
         userCondition: null

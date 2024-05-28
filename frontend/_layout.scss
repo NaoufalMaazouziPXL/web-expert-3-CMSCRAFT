@@ -669,6 +669,7 @@
 }
 .contact-form input,
 .contact-form textarea {
+  color: black;
   width: 100%;
   padding: 10px;
   margin: 10px 0;
@@ -680,7 +681,7 @@
   border: none;
   border-radius: 5px;
   background: $color-red;
-  color: #fff;
+  color: black;
   cursor: pointer;
 }
 
@@ -719,6 +720,7 @@
     background-color: $color-black;
     border: $color-white solid 1px;
     color: $color-white;
+
   }
 }
 
@@ -837,4 +839,18 @@
 
 #elc-cookie-consent {
   background-color: #0d0d0d;
+}
+
+.align-left  {
+  float: left;
+}
+
+.align-right  {
+  float: right;
+}
+
+
+.form-block, .hero-image-text-block, .producten-block {
+  margin-bottom: 70px;
+  margin-top: 70px;
 }

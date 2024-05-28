@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: alignSwitch
+instructions: null
+name: align-switch
+searchable: false
+settings:
+  default: true
+  offLabel: LEFT
+  onLabel: RIGHT
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch
